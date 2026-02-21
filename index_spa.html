@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gloweb Technologies | IT & Training in Bhopal</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0a192f;
+    color: white;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00dfd8;
+}
+
+section {
+    padding: 100px 20px 60px 20px;
+    min-height: 100vh;
+}
+
+.hero {
+    background: linear-gradient(to right, #007cf0, #00dfd8);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #128C7E;
+}
+
+/* Container */
+.container-small {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #007cf0;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card .price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 20px 0;
+    color: #0a192f;
+}
+
+.dark {
+    background: #0a192f;
+    color: white;
+}
+
+.dark .card {
+    background: #112240;
+    color: white;
+}
+
+/* Packages Grid */
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.whatsapp-btn:hover {
+    background: #128C7E;
+}
+
+/* Footer */
+footer {
+    background: #0a192f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Nav for Mobile */
+@media(max-width: 768px){
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">Gloweb Technologies</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#training">Training</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="container-small">
+        <h1>Innovative IT Solutions & Training</h1>
+        <p>Website Development | Software Solutions | SEO | Digital Marketing | IT Training Courses</p>
+        <a href="#services" class="btn">Our Services</a>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="container-small">
+        <h2 style="text-align:center; margin-bottom:40px;">Our IT Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Website Design</h3>
+                <p>Modern, responsive and creative website designs tailored to your business.</p>
+            </div>
+            <div class="card">
+                <h3>Website Development</h3>
+                <p>High performance and secure web development solutions.</p>
+            </div>
+            <div class="card">
+                <h3>Software Development</h3>
+                <p>Custom software development for startups and enterprises.</p>
+            </div>
+            <div class="card">
+                <h3>SEO</h3>
+                <p>Rank higher on Google with our result-oriented SEO strategies.</p>
+            </div>
+            <div class="card">
+                <h3>Digital Marketing</h3>
+                <p>Boost your brand visibility and generate quality leads.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Training Section -->
+<section id="training">
+    <div class="container-small">
+        <h2 style="text-align:center; margin-bottom:40px;">Professional Training Courses</h2>
+
+        <div class="grid">
+            <div class="card"><h3>Python</h3></div>
+            <div class="card"><h3>AI</h3></div>
+            <div class="card"><h3>Data Science</h3></div>
+            <div class="card"><h3>HTML</h3></div>
+            <div class="card"><h3>CSS</h3></div>
+            <div class="card"><h3>JavaScript</h3></div>
+            <div class="card"><h3>Java (Core & Advanced)</h3></div>
+        </div>
+    </div>
+</section>
+<!-- Portfolio Section -->
+<section id="portfolio">
+    <div class="container-small">
+        <h2 style="text-align:center; margin-bottom:40px;">Our Portfolio</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Transport Logistics ERP</h3>
+                <p>Complete ERP system for transport & logistics companies with bilty management, challan generation, location tracking, driver ledger and reporting dashboard.</p>
+            </div>
+
+            <div class="card">
+                <h3>Billing & Invoicing POS System</h3>
+                <p>Retail POS system with barcode billing, GST invoices, inventory management, customer database and sales reporting.</p>
+            </div>
+
+            <div class="card">
+                <h3>Manufacturing ERP</h3>
+                <p>Production planning, raw material tracking, BOM management, purchase orders, inventory and financial reporting system.</p>
+            </div>
+
+            <div class="card">
+                <h3>School Management System</h3>
+                <p>Student admission, fee management, attendance tracking, exam results, parent portal and admin dashboard.</p>
+            </div>
+
+            <div class="card">
+                <h3>Inspection & Audit App</h3>
+                <p>Field inspection application with checklist system, image upload, geo-tagging, PDF report generation and admin analytics panel.</p>
+            </div>
+
+            <div class="card">
+                <h3>CRM Implementation (D365)</h3>
+                <p>Custom CRM solution for sales automation, lead tracking, workflow automation and business process optimization.</p>
+            </div>
+
+            <div class="card">
+                <h3>Custom Business ERP</h3>
+                <p>Role-based secure ERP platform with JWT authentication, reporting dashboard and multi-branch access control.</p>
+            </div>
+
+            <div class="card">
+                <h3>Real Estate Management System</h3>
+                <p>Property listing management, broker tracking, commission reports, payment schedules and document storage.</p>
+            </div>
+
+            <div class="card">
+                <h3>E-commerce Platform</h3>
+                <p>Full-featured online store with payment gateway integration, order management, product catalog and admin panel.</p>
+            </div>
+
+            <div class="card">
+                <h3>HR & Payroll Management System</h3>
+                <p>Employee attendance, payroll processing, leave management, performance tracking and compliance reporting.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Packages Section -->
+<section id="packages">
+    <div class="container-small">
+        <h2 style="text-align:center; margin-bottom:40px;">Business Website Packages</h2>
+        <div class="package-grid">
+
+            <div class="card">
+                <h3>Basic</h3>
+                <p>✅ 5 Pages Website (Home, About,Products,Gallery, Contact)</p>
+                <p>✅ Responsive Design</p>
+                <p>✅ Basic SEO</p>
+                <p>✅ 1 Week Delivery</p>
+                <div class="price">₹7,999*</div>                <a href="https://wa.me/918889096777?text=Hi Gloweb, I am interested in the Basic Package" target="_blank" class="whatsapp-btn">Contact on WhatsApp</a>
+            </div>
+
+            <div class="card">
+                <h3>Standard</h3>
+                <p>✅ 7 Pages Website + Blog</p>
+                <p>✅ Responsive & Modern Design</p>
+                <p>✅ SEO Optimization</p>
+                <p>✅ 2 Weeks Delivery</p>
+                <p>✅ Social Media Integration</p>
+                <div class="price">₹14,999</div>
+                <a href="https://wa.me/918889096777?text=Hi Gloweb, I am interested in the Standard Package" target="_blank" class="whatsapp-btn">Contact on WhatsApp</a>
+            </div>
+
+            <div class="card">
+                <h3>Premium</h3>
+                <p>✅ 10+ Pages Website</p>
+                <p>✅ Custom Design & Animations</p>
+                <p>✅ Advanced SEO & Digital Marketing Setup</p>
+                <p>✅ 1 Month Delivery</p>
+                <p>✅ Blog + E-commerce Integration</p>
+                <div class="price">₹29,999</div>
+                <a href="https://wa.me/918889096777?text=Hi Gloweb, I am interested in the Premium Package" target="_blank" class="whatsapp-btn">Contact on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container-small">
+        <h2 style="text-align:center; margin-bottom:30px;">Contact Us</h2>
+        <p style="text-align:center; margin-bottom:30px;">
+            Reach out for a free consultation or custom business solutions.
+        </p>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Office Address</h3>
+                <p>
+                    A20, Mahatma Gandhi Market,<br>
+                    Karond, Bhopal,<br>
+                    Madhya Pradesh – 462038
+                </p>
+                <br>
+                <a href="https://maps.app.goo.gl/Xj1ypQGz4zHmBPMBA" target="_blank" class="btn">
+                    View on Google Maps
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Contact Details</h3>
+                <p><strong>Phone:</strong> 
+                    <a href="tel:+919112011178" style="color:#007cf0;">+91 9112011178</a>
+                </p>
+                <p><strong>Email:</strong> 
+                    <a href="mailto:dewdroptabbu@gmail.com" style="color:#007cf0;">
+                        dewdroptabbu@gmail.com
+                    </a>
+                </p>
+                <p><strong>Working Hours:</strong><br>
+                    10:00 AM – 6:00 PM
+                </p>
+                <br>
+                <a href="https://wa.me/918889096777?text=Hi Gloweb, I want to discuss my business website" 
+                   target="_blank" 
+                   class="whatsapp-btn">
+                   Chat on WhatsApp
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+ 
+<footer>
+    <p>© 2026 Gloweb Technologies | Bhopal | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
